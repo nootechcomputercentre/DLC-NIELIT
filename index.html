@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NIELIT CCC, CCCP and ECC registration form - Nootech Computer Centre">
+  <title>NIELIT_REG_Details | Nootech Computer Centre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-glow glow-one"></div><div class="page-glow glow-two"></div>
+  <main class="shell">
+    <header class="hero">
+      <div class="brand-mark"><img src="assets/nootech-logo.png" alt="Nootech Computer Centre logo" onerror="this.style.display='none';this.parentElement.classList.add('logo-fallback');this.parentElement.textContent='N'"></div>
+      <div class="hero-copy">
+        <span class="eyebrow">NOOTECH COMPUTER CENTRE</span>
+        <h1>CCC / CCCP / ECC<br><span>REGISTRATION FORM</span></h1>
+        <p>Authorized Facilitation Centre – CSC, Ashoknagar, Athgarh</p>
+        <a class="phone" href="tel:+919853895452">☎ +91-9853895452</a>
+      </div>
+      <div class="hero-chip">ONLINE<br>APPLICATION</div>
+    </header>
+
+    <section class="form-card">
+      <div class="form-heading">
+        <div><span class="eyebrow">CANDIDATE PORTAL</span><h2>NIELIT_REG_Details</h2><p>Enter your details carefully. Fields marked * are mandatory.</p></div>
+        <span class="secure-tag">● Secure submission</span>
+      </div>
+      <form id="registrationForm">
+        <section class="form-section">
+          <h3><span>01</span> Personal information</h3>
+          <div class="form-grid">
+            <label class="field span-2">Full Name *<input name="fullName" required maxlength="100" autocomplete="name" placeholder="Enter full name"></label>
+            <label class="field">Father's Name *<input name="fatherName" required maxlength="100"></label>
+            <label class="field">Mother's Name *<input name="motherName" required maxlength="100"></label>
+            <label class="field">Gender *<select name="gender" required><option value="">Select gender</option><option>Male</option><option>Female</option><option>Trans</option></select></label>
+            <label class="field">Date of Birth *<input type="date" name="dob" required></label>
+            <label class="field">Category *<select name="category" required><option value="">Select category</option><option>General</option><option>OBC</option><option>SC</option><option>ST</option><option>SEBC</option><option>Others</option></select></label>
+            <label class="field">Occupation *<select name="occupation" required><option value="">Select occupation</option><option>Govt. Employee</option><option>Govt. Undertaking Employee</option><option>Self Employed</option><option>Others</option></select></label>
+            <label class="field">Person with Disability? *<select name="disability" required><option value="">Select</option><option>Yes</option><option>No</option></select></label>
+            <label class="field">EWS? *<select name="ews" required><option value="">Select</option><option>Yes</option><option>No</option></select></label>
+          </div>
+        </section>
+
+        <section class="form-section">
+          <h3><span>02</span> Contact & address</h3>
+          <div class="form-grid">
+            <label class="field">Mobile Number *<input name="mobile" type="tel" inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10" required placeholder="10-digit mobile number"></label>
+            <label class="field">At / Village *<input name="village" required></label>
+            <label class="field">Post Office *<input name="postOffice" required></label>
+            <label class="field">Police Station *<input name="policeStation" required></label>
+            <label class="field">City / Town *<input name="city" required></label>
+            <label class="field">State *<input name="state" value="Odisha" required></label>
+            <label class="field">District *<input name="district" value="Cuttack" required></label>
+            <label class="field">PIN Code *<input name="pincode" inputmode="numeric" pattern="[0-9]{6}" maxlength="6" required></label>
+          </div>
+        </section>
+
+        <section class="form-section">
+          <h3><span>03</span> Educational qualification</h3>
+          <div class="form-grid">
+            <label class="field span-2">Highest Qualification *<select name="qualification" required><option value="">Select qualification</option><option>Others</option><option>Graduation or Higher</option><option>Polytechnic Diploma</option><option>Below 10th</option><option>10th Pass</option><option>12th Pass</option><option>10th + ITI</option></select></label>
+            <label class="field">Year of Passing *<input name="passingYear" type="number" min="1950" max="2100" required placeholder="e.g. 2022"></label>
+          </div>
+        </section>
+
+        <section class="form-section">
+          <h3><span>04</span> Identity details</h3>
+          <div class="form-grid">
+            <label class="field">Aadhaar Number *<input name="aadhaar" inputmode="numeric" pattern="[0-9]{12}" maxlength="12" required placeholder="12-digit Aadhaar number"><small>Submitted identity information is stored in the institute's restricted Google Drive.</small></label>
+            <label class="field">APAAR ID<input name="apaarId" maxlength="30" placeholder="Enter APAAR ID, if available"></label>
+          </div>
+        </section>
+
+        <section class="form-section">
+          <h3><span>05</span> Upload documents</h3>
+          <div class="upload-grid">
+            <label class="upload-box"><span class="upload-icon">▧</span><strong>Passport-size photograph *</strong><small>JPG, JPEG or PNG · Max 2 MB</small><input type="file" name="photo" accept="image/jpeg,image/png" required><span class="file-name">Choose photo</span></label>
+            <label class="upload-box"><span class="upload-icon">✍</span><strong>Signature *</strong><small>JPG, JPEG or PNG · Max 1 MB</small><input type="file" name="signature" accept="image/jpeg,image/png" required><span class="file-name">Choose signature</span></label>
+          </div>
+        </section>
+
+        <label class="consent"><input type="checkbox" name="consent" required><span>I confirm that the information provided is correct and consent to its use for NIELIT registration processing by Nootech Computer Centre.</span></label>
+        <div id="formMessage" class="form-message" role="status" aria-live="polite"></div>
+        <button class="submit-btn" id="submitBtn" type="submit">Submit Registration <span>→</span></button>
+        <p class="privacy-note">Do not submit another person's identity details without their permission. Contact the centre if you need to correct a submission.</p>
+      </form>
+    </section>
+
+    <div class="site-link"><span>Want to know more about our courses?</span><a href="https://nootechcomputercentre.github.io/main-site/" target="_blank" rel="noopener">Visit Nootech Computer Centre website ↗</a></div>
+    <footer>© 2025 Nootech Computer Centre. All rights reserved.<br><span>Developed by <strong>Mr. SARBAJIT SENAPATI</strong></span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

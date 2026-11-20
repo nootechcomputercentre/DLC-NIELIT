@@ -1,0 +1,1 @@
+Place your Nootech Computer Centre logo here and name it nootech-logo.png. Keep this assets folder beside index.html.
