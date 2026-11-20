@@ -1,1 +1,597 @@
-*{box-sizing:border-box} :root{--ink:#17213b;--muted:#69758d;--line:#e5eaf3;--accent:#6558e8;--accent2:#18a9a0}body{margin:0;min-height:100vh;background:linear-gradient(135deg,#edf2ff 0%,#f8faff 48%,#e8f7f5 100%);font-family:"DM Sans",sans-serif;color:var(--ink);position:relative;overflow-x:hidden}.page-glow{position:fixed;border-radius:50%;filter:blur(3px);opacity:.35;pointer-events:none}.glow-one{width:360px;height:360px;background:#b9b5ff;top:-150px;left:-120px}.glow-two{width:420px;height:420px;background:#a9eee2;right:-190px;bottom:-180px}.shell{width:min(100% - 32px,1020px);margin:38px auto;position:relative}.hero{display:flex;align-items:center;gap:26px;padding:34px 38px;border-radius:25px;background:linear-gradient(115deg,#171e3b,#292c5c 58%,#3e4c85);color:white;box-shadow:0 22px 55px #242b5730;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:340px;height:340px;border:1px solid #ffffff20;border-radius:50%;right:-85px;top:-185px;box-shadow:0 0 0 35px #ffffff08,0 0 0 75px #ffffff06}.brand-mark{width:90px;height:90px;flex:0 0 90px;border-radius:21px;background:#fff;display:grid;place-items:center;overflow:hidden;box-shadow:0 8px 25px #0003;color:#6558e8;font:800 48px Outfit}.brand-mark img{width:100%;height:100%;object-fit:contain;padding:8px}.hero-copy{position:relative;z-index:1}.eyebrow{font-size:10px;letter-spacing:2px;font-weight:700;color:#aeb8ff}.hero h1{font:800 clamp(27px,4vw,43px)/1.05 Outfit;margin:9px 0 12px;letter-spacing:.2px}.hero h1 span{color:#9ee9dc}.hero p{margin:0 0 7px;color:#d7dcf3;font-size:14px}.phone{color:#a9f0e3;text-decoration:none;font-weight:700;font-size:14px}.hero-chip{margin-left:auto;align-self:flex-start;position:relative;z-index:1;border:1px solid #ffffff45;border-radius:12px;padding:10px 13px;font-size:9px;letter-spacing:1.5px;line-height:1.6;text-align:center;color:#dfe4ff}.form-card{background:#fff;border:1px solid #e7ebf4;border-radius:24px;margin-top:24px;padding:34px 40px;box-shadow:0 18px 55px #29365b12}.form-heading{display:flex;justify-content:space-between;gap:15px;align-items:center;padding-bottom:23px;border-bottom:1px solid var(--line)}.form-heading .eyebrow{color:var(--accent);font-size:10px}.form-heading h2{font:700 25px Outfit;margin:5px 0}.form-heading p{color:var(--muted);font-size:13px;margin:0}.secure-tag{font-size:11px;color:#168b72;background:#e9faf5;padding:9px 12px;border-radius:30px;white-space:nowrap}.form-section{padding:25px 0 23px;border-bottom:1px solid var(--line)}.form-section h3{font:700 16px Outfit;margin:0 0 18px;display:flex;align-items:center;gap:10px}.form-section h3 span{background:#efefff;color:var(--accent);border-radius:8px;padding:6px 8px;font:700 11px "DM Sans"}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px 20px}.field{display:flex;flex-direction:column;gap:7px;font-size:12px;font-weight:700;color:#34405b}.field input,.field select{width:100%;height:45px;border:1px solid #dfe5ef;border-radius:10px;padding:0 13px;background:#fbfcff;color:#1b2540;font:500 13px "DM Sans";outline:none;transition:.2s}.field input:focus,.field select:focus{border-color:#8075ed;box-shadow:0 0 0 3px #8075ed1a;background:#fff}.field small{font-size:10px;font-weight:400;color:#7a8499;line-height:1.4}.span-2{grid-column:span 2}.upload-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.upload-box{border:1.5px dashed #cbd2e5;border-radius:14px;padding:19px;display:flex;flex-direction:column;align-items:flex-start;gap:7px;background:#fafbff;cursor:pointer;transition:.2s}.upload-box:hover{border-color:var(--accent);background:#f7f6ff}.upload-icon{font-size:22px;color:var(--accent)}.upload-box strong{font-size:13px}.upload-box small{font-size:11px;color:var(--muted)}.upload-box input{font-size:11px;max-width:100%;margin-top:5px}.file-name{font-size:11px;color:#6558e8;font-weight:700;overflow-wrap:anywhere}.consent{display:flex;gap:11px;align-items:flex-start;margin:23px 0 18px;font-size:12px;line-height:1.6;color:#58647c}.consent input{accent-color:var(--accent);margin-top:3px}.submit-btn{border:0;border-radius:12px;width:100%;height:52px;background:linear-gradient(100deg,#6558e8,#5147c7);color:white;font:700 14px "DM Sans";cursor:pointer;box-shadow:0 9px 20px #6558e833;transition:.2s}.submit-btn:hover{transform:translateY(-2px);box-shadow:0 12px 25px #6558e84a}.submit-btn:disabled{opacity:.6;cursor:wait;transform:none}.submit-btn span{font-size:20px;margin-left:8px}.form-message{display:none;margin:0 0 14px;padding:12px 14px;border-radius:10px;font-size:12px;line-height:1.5}.form-message.show{display:block}.form-message.success{background:#e9faf3;color:#12694f}.form-message.error{background:#fff0f0;color:#a52d38}.privacy-note{text-align:center;color:#8992a5;font-size:10px;line-height:1.5;margin:13px 0 0}.site-link{text-align:center;margin:25px auto 18px;font-size:13px;color:#6b7590}.site-link a{display:block;margin-top:6px;color:#5147c7;font-weight:700;text-decoration:none}.site-link a:hover{text-decoration:underline}footer{text-align:center;color:#7c879d;font-size:11px;line-height:1.8;padding:16px 0 28px}footer strong{color:#4a5570}@media(max-width:650px){.shell{width:min(100% - 20px,1020px);margin:12px auto}.hero{padding:25px 20px;gap:15px;border-radius:18px}.brand-mark{width:62px;height:62px;flex-basis:62px;border-radius:15px}.hero h1{font-size:25px}.hero p{font-size:11px;line-height:1.5}.hero-chip{display:none}.form-card{padding:24px 19px;border-radius:18px}.form-heading{align-items:flex-start;flex-direction:column}.form-heading h2{font-size:22px}.form-grid,.upload-grid{grid-template-columns:1fr}.span-2{grid-column:auto}.form-section{padding:21px 0}.field input,.field select{height:47px}}
+/* =========================================================
+   NOOTECH NIELIT REGISTRATION FORM
+   Updated stylesheet — formatted line by line for debugging
+   ========================================================= */
+
+/* 1. GLOBAL SETTINGS */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --page-bg: #10172a;
+    --card-bg: #1b2740;
+    --field-bg: #111c31;
+    --field-bg-focus: #172640;
+    --text-main: #f2f5ff;
+    --text-soft: #c0cbe0;
+    --text-muted: #91a0bb;
+    --line: #34435f;
+    --line-strong: #465875;
+    --accent: #8b80ff;
+    --success-bg: #123d38;
+    --success-text: #9af0d8;
+    --error-bg: #4b202b;
+    --error-text: #ffc0c8;
+}
+
+/* 2. BODY AND PAGE BACKGROUND */
+body {
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    background:
+        radial-gradient(circle at 10% 5%, #28345b 0%, transparent 30%),
+        radial-gradient(circle at 95% 90%, #173d42 0%, transparent 28%),
+        linear-gradient(135deg, #10172a 0%, #141e33 55%, #10252c 100%);
+    color: var(--text-main);
+    font-family: "DM Sans", sans-serif;
+}
+
+/* 3. DECORATIVE BACKGROUND GLOWS */
+.page-glow {
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(3px);
+    opacity: 0.22;
+    pointer-events: none;
+}
+
+.glow-one {
+    width: 360px;
+    height: 360px;
+    background: #7469e8;
+    top: -150px;
+    left: -120px;
+}
+
+.glow-two {
+    width: 420px;
+    height: 420px;
+    background: #27b8a7;
+    right: -190px;
+    bottom: -180px;
+}
+
+/* 4. MAIN PAGE CONTAINER */
+.shell {
+    width: min(100% - 32px, 1020px);
+    margin: 38px auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* 5. HERO SECTION */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 205px;
+    padding: 34px 150px;
+    border-radius: 25px;
+    background: linear-gradient(
+        115deg,
+        #171e3b 0%,
+        #292c5c 58%,
+        #3e4c85 100%
+    );
+    color: #ffffff;
+    box-shadow: 0 22px 55px #00000045;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 340px;
+    height: 340px;
+    border: 1px solid #ffffff20;
+    border-radius: 50%;
+    right: -85px;
+    top: -185px;
+    box-shadow:
+        0 0 0 35px #ffffff08,
+        0 0 0 75px #ffffff06;
+    pointer-events: none;
+}
+
+/* 6. HERO LOGO — TRANSPARENT BACKGROUND */
+.brand-mark {
+    width: 90px;
+    height: 90px;
+    flex: 0 0 90px;
+    position: absolute;
+    left: 38px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: #ffffff;
+    font: 800 48px Outfit, sans-serif;
+}
+
+.brand-mark img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 0;
+    background: transparent;
+    mix-blend-mode: normal;
+}
+
+/* 7. HERO TEXT — CENTER ALIGNMENT */
+.hero-copy {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.eyebrow {
+    display: inline-block;
+    color: #b9c2ff;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    margin: 9px 0 12px;
+    color: #ffffff;
+    font: 800 clamp(27px, 4vw, 43px) / 1.05 Outfit, sans-serif;
+    letter-spacing: 0.2px;
+    text-align: center;
+}
+
+.hero h1 span {
+    color: #9ee9dc;
+}
+
+.hero p {
+    margin: 0 0 7px;
+    color: #e0e5f8;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.phone {
+    display: inline-block;
+    color: #a9f0e3;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.phone:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* 8. HERO CHIP */
+.hero-chip {
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    right: 30px;
+    margin: 0;
+    padding: 10px 13px;
+    border: 1px solid #ffffff45;
+    border-radius: 12px;
+    color: #dfe4ff;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* 9. MAIN FORM CARD — DARK THEME */
+.form-card {
+    margin-top: 24px;
+    padding: 34px 40px;
+    background: linear-gradient(145deg, #1b2740, #19243a);
+    border: 1px solid #34435f;
+    border-radius: 24px;
+    box-shadow: 0 18px 55px #00000035;
+}
+
+/* 10. FORM HEADER */
+.form-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 23px;
+    border-bottom: 1px solid var(--line);
+}
+
+.form-heading .eyebrow {
+    color: #a99fff;
+    font-size: 10px;
+}
+
+.form-heading h2 {
+    margin: 5px 0;
+    color: #ffffff;
+    font: 700 25px Outfit, sans-serif;
+}
+
+.form-heading p {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.secure-tag {
+    padding: 9px 12px;
+    background: #123d38;
+    border-radius: 30px;
+    color: #8ee5cf;
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+/* 11. FORM SECTIONS */
+.form-section {
+    padding: 25px 0 23px;
+    border-bottom: 1px solid var(--line);
+}
+
+.form-section h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 18px;
+    color: #f3f5ff;
+    font: 700 16px Outfit, sans-serif;
+}
+
+.form-section h3 span {
+    padding: 6px 8px;
+    background: #34305f;
+    border-radius: 8px;
+    color: #c0baff;
+    font: 700 11px "DM Sans", sans-serif;
+}
+
+/* 12. FORM GRID */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 17px 20px;
+}
+
+/* 13. FIELD LABELS */
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    color: #dce4f5;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* 14. INPUTS AND DROPDOWNS */
+.field input,
+.field select {
+    width: 100%;
+    height: 45px;
+    padding: 0 13px;
+    background: var(--field-bg);
+    border: 1px solid var(--line-strong);
+    border-radius: 10px;
+    outline: none;
+    color: #f4f6ff;
+    font: 500 13px "DM Sans", sans-serif;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+.field input::placeholder {
+    color: #7888a5;
+    opacity: 1;
+}
+
+.field select option {
+    background: #17243b;
+    color: #f4f6ff;
+}
+
+.field input:focus,
+.field select:focus {
+    background: var(--field-bg-focus);
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px #8b80ff25;
+}
+
+.field small {
+    color: #9aa8c0;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.span-2 {
+    grid-column: span 2;
+}
+
+/* 15. FILE UPLOAD SECTION */
+.upload-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.upload-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+    padding: 19px;
+    background: #17243b;
+    border: 1.5px dashed #566789;
+    border-radius: 14px;
+    cursor: pointer;
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease;
+}
+
+.upload-box:hover {
+    background: #202e4b;
+    border-color: var(--accent);
+}
+
+.upload-icon {
+    color: #a99fff;
+    font-size: 22px;
+}
+
+.upload-box strong {
+    color: #f0f3ff;
+    font-size: 13px;
+}
+
+.upload-box small {
+    color: #9aa8c0;
+    font-size: 11px;
+}
+
+.upload-box input {
+    max-width: 100%;
+    margin-top: 5px;
+    color: #dce4f5;
+    font-size: 11px;
+}
+
+.file-name {
+    color: #b5adff;
+    font-size: 11px;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+/* 16. CONSENT CHECKBOX */
+.consent {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    margin: 23px 0 18px;
+    color: #bdc9df;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.consent input {
+    margin-top: 3px;
+    accent-color: var(--accent);
+}
+
+/* 17. SUBMIT BUTTON */
+.submit-btn {
+    width: 100%;
+    height: 52px;
+    border: 0;
+    border-radius: 12px;
+    background: linear-gradient(100deg, #786bed, #5147c7);
+    color: #ffffff;
+    font: 700 14px "DM Sans", sans-serif;
+    cursor: pointer;
+    box-shadow: 0 9px 20px #6558e844;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px #6558e855;
+}
+
+.submit-btn:disabled {
+    opacity: 0.6;
+    cursor: wait;
+    transform: none;
+}
+
+.submit-btn span {
+    margin-left: 8px;
+    font-size: 20px;
+}
+
+/* 18. FORM STATUS MESSAGES */
+.form-message {
+    display: none;
+    margin: 0 0 14px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.form-message.show {
+    display: block;
+}
+
+.form-message.success {
+    background: var(--success-bg);
+    color: var(--success-text);
+}
+
+.form-message.error {
+    background: var(--error-bg);
+    color: var(--error-text);
+}
+
+/* 19. PRIVACY NOTE */
+.privacy-note {
+    margin: 13px 0 0;
+    color: #91a0bb;
+    font-size: 10px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* 20. MAIN WEBSITE LINK */
+.site-link {
+    margin: 25px auto 18px;
+    color: #aab6ce;
+    font-size: 13px;
+    text-align: center;
+}
+
+.site-link a {
+    display: block;
+    margin-top: 6px;
+    color: #b5adff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.site-link a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* 21. FOOTER */
+footer {
+    padding: 16px 0 28px;
+    color: #91a0bb;
+    font-size: 11px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+footer strong {
+    color: #dce4f5;
+}
+
+/* 22. RESPONSIVE TABLET AND MOBILE LAYOUT */
+@media (max-width: 650px) {
+    .shell {
+        width: min(100% - 20px, 1020px);
+        margin: 12px auto;
+    }
+
+    .hero {
+        min-height: 190px;
+        padding: 88px 16px 24px;
+        gap: 15px;
+        border-radius: 18px;
+    }
+
+    .brand-mark {
+        width: 58px;
+        height: 58px;
+        left: 50%;
+        top: 17px;
+        transform: translateX(-50%);
+    }
+
+    .hero h1 {
+        font-size: 25px;
+    }
+
+    .hero p {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    .hero-chip {
+        display: none;
+    }
+
+    .form-card {
+        padding: 24px 19px;
+        border-radius: 18px;
+    }
+
+    .form-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .form-heading h2 {
+        font-size: 22px;
+    }
+
+    .form-grid,
+    .upload-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .span-2 {
+        grid-column: auto;
+    }
+
+    .form-section {
+        padding: 21px 0;
+    }
+
+    .field input,
+    .field select {
+        height: 47px;
+    }
+}
+
+/* 23. EXTRA SMALL MOBILE SCREENS */
+@media (max-width: 380px) {
+    .hero {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .hero h1 {
+        font-size: 22px;
+    }
+
+    .form-card {
+        padding: 20px 14px;
+    }
+
+    .form-section h3 {
+        font-size: 15px;
+    }
+}
